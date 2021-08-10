@@ -25,8 +25,6 @@ Quick peek at the result:
 
 **Code:** we add hm_binary_focal_loss in mmdet/losses/hm_binary_focal_loss.py.
 
-**Code:** we modify mmdet/roi_heads/cascade_roi_head.py, add the super parameter add_agnostic_score to Control whether the first stage score.
-
 **Code:** we modify mmdet/roi_heads/cascade_roi_head.py, add the super parameter add_agnostic_score to Control whether the first stage score.This hyperparameter does not affect the use of other configuration files
 
 **Code:** we modify mmdet/bbox_head/bbox_head.py, add the super parameter add_agnostic_score to Control Whether to use softmax.This hyperparameter does not affect the use of other configuration files
