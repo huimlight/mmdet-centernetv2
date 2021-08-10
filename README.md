@@ -12,7 +12,7 @@ Quick peek at the result:
 >
 > **This implementation:** we implement centernet2(CascadeRCNN-CenterNet w. prob.) mAP is 39.9.
 >
-> **reason:** Source code uses 8 GPU, we only use 3 GPU.
+> **Reason:** Source code uses 8 GPU, we only use 3 GPU.
 >
 > **Note:** We will continue to maintain the code to get the map to 42.9.
 
