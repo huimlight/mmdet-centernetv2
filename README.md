@@ -39,10 +39,6 @@ Quick peek at the result:
 
 **Dataset:** coco_train_2017(117k) as training dataset and coco_val_2017(5k) as testing dataset. All the results are reported on coco_val_2017.
 
-**Baseline:** The paper compared their methods on FasterRCNN, MaskRCNN and CascadeRCNN. Here I only focus on FasterRCNN due to limited computing resource. In the paper, they report their implementation of FasterRCNN to have AP=36.4, which is lower than what's reported by MMDetection(37.4). For fair comparison, I retrained FasterRCNN([faster_rcnn_r50_fpn_1x_coco.py](https://github.com/open-mmlab/mmdetection/blob/v2.14.0/configs/faster_rcnn/faster_rcnn_r50_fpn_1x_coco.py)) on my machine and use it as the baseline(37.6). And I primarily compare the relative improvement instead of the absolute AP.
-
-
-
 Results reported in the paper:
 
 |                              | AP      | AP50   | AP75   | APs    | APm    | APl    |
