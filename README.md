@@ -58,7 +58,7 @@ Log and model:
 
 |                      | backbone | Iter | bbox AP | Config                                                       | Log                                                          | Model                                                        | GPUs |
 | -------------------- | -------- | ------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
-| cascadeRCNN-CenterNet w.prob | R-50-FPN | 9000      | 39.9    | [config](https://github.com/thisisi3/OpenMMLab-IoUNet/blob/main/assets/faster_rcnn_r50_fpn_1x_coco.py) | [log](https://github.com/thisisi3/OpenMMLab-IoUNet/blob/main/assets/faster_rcnn_r50_fpn_1x_coco_20210803_233510.log.json) | [baidu ](https://pan.baidu.com/s/1_IAGw_65fmcPFz8RQDzREw) [wuef] | 3    |
+| cascadeRCNN-CenterNet w.prob | R-50-FPN | 9000      | 39.9    | [config](https://github.com/huimlight/mmdetection/blob/centernetv2/configs/centernetv2/centernet2.py) | [log](https://github.com/thisisi3/OpenMMLab-IoUNet/blob/main/assets/faster_rcnn_r50_fpn_1x_coco_20210803_233510.log.json) | [baidu ](https://pan.baidu.com/s/1_IAGw_65fmcPFz8RQDzREw) [wuef] | 3    |
 
 
 
