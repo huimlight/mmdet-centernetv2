@@ -12,10 +12,11 @@ Quick peek at the result:
 >
 > **This implementation:** we implement centernet2(CascadeRCNN-CenterNet w. prob.) mAP is 41.9.
 > 
-> **This implementation:** we implement centernet2(CascadeRCNN-CenterNet w. prob.) mAP is 41.9.
+> **Reason:** There are problems with learning strategies.
 > 
 > **Note:** We will continue to maintain the code to get the map to 42.9.
-
+> 
+> **Note:** We then we're going to reproduce the weights, which Verification and inference part.
 
 ## Implementation
 
