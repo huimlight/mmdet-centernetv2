@@ -11,7 +11,9 @@ Quick peek at the result:
 > **The paper:** centernet2(CascadeRCNN-CenterNet w. prob.) mAP is 42.9.
 >
 > **This implementation:** we implement centernet2(CascadeRCNN-CenterNet w. prob.) mAP is 41.9.
->
+> 
+> **This implementation:** we implement centernet2(CascadeRCNN-CenterNet w. prob.) mAP is 41.9.
+> 
 > **Note:** We will continue to maintain the code to get the map to 42.9.
 
 
@@ -56,7 +58,7 @@ Log and model:
 
 |                      | backbone | Iter | bbox AP | Config                                                       | Log                                                          | Model                                                        | GPUs |
 | -------------------- | -------- | ------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
-| cascadeRCNN-CenterNet w.prob | R-50-FPN | 9000      | 39.9    | [config](https://github.com/huimlight/mmdetection/blob/centernetv2/configs/centernetv2/centernet2.py) | [log](https://github.com/thisisi3/OpenMMLab-IoUNet/blob/main/assets/faster_rcnn_r50_fpn_1x_coco_20210803_233510.log.json) | [baidu ](https://pan.baidu.com/s/1_IAGw_65fmcPFz8RQDzREw) [wuef] | 3    |
+| cascadeRCNN-CenterNet w.prob | R-50-FPN | 9000      | 31.9    | [config](https://github.com/huimlight/mmdetection/blob/centernetv2/configs/centernetv2/centernet2.py) | [log](https://github.com/thisisi3/OpenMMLab-IoUNet/blob/main/assets/faster_rcnn_r50_fpn_1x_coco_20210803_233510.log.json) | [baidu ](https://pan.baidu.com/s/1XACylKLLZhBKo8nUJubA7g) [1171] | 3    |
 
 
 
