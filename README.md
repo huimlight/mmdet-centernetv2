@@ -50,7 +50,7 @@ Results by this implementation:
 
 |                              | AP     | AP50  | AP75   | APs    | APm    | APl    |
 | ---------------------------- | ------ | ----- | ------ | ------ | ------ | ------ |
-| cascadeRCNN-CenterNet w.prob | 39.9   | 56.8  | 44.4   | 23.2   | 44.0   | 52.2   |
+| cascadeRCNN-CenterNet w.prob | 41.9   | 59.0  | 46.4   | 24.4   | 45.6   | 55.4   |
 
 
 
