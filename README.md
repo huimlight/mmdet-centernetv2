@@ -10,7 +10,7 @@ Quick peek at the result:
 
 > **The paper:** centernet2(CascadeRCNN-CenterNet w. prob.) mAP is 42.9.
 >
-> **This implementation:** we implement centernet2(CascadeRCNN-CenterNet w. prob.) mAP is 39.9.
+> **This implementation:** we implement centernet2(CascadeRCNN-CenterNet w. prob.) mAP is 41.9.
 >
 > **Reason:** Source code uses 8 GPU, we only use 3 GPU.
 >
