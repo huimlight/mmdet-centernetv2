@@ -91,6 +91,13 @@ Log and model:
 | -------------------- | -------- | ------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
 | cascadeRCNN-CenterNet w.prob | R-50-FPN | 9000      | 42.8    | [config](https://github.com/huimlight/mmdet-centernetv2/blob/main/centernet2_res50_rpn_90k_coco.py) | [log](https://github.com/huimlight/mmdet-centernetv2/blob/main/20210810_192908.log.json) | [baidu ](https://pan.baidu.com/s/1lVwFiMqCe3BsgeRSdR9u_g) [5bot] | single v100    |
 
+Log and model:
+
+|                      | backbone | Iter | bbox AP | Config                                                       | Log                                                          | Model                                                        | GPUs |
+| -------------------- | -------- | ------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
+| cascadeRCNN-CenterNet w.prob | R-50-FPN | 9000      | 42.8    | [config](https://github.com/huimlight/mmdet-centernetv2/blob/main/centernet2_res50_rpn_90k_coco.py) | [log](https://github.com/huimlight/mmdet-centernetv2/blob/main/20210810_192908.log.json) | [baidu ](https://pan.baidu.com/s/1kDOMnEpzFNjaxld8rHTCLw) [osix] | single v100    |
+
+
 ## Usage
 
 You can train and inference the model like any other models in MMDetection, see [docs](https://mmdetection.readthedocs.io/) for details.
