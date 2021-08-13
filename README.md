@@ -47,12 +47,18 @@ Results reported in the paper:
 | cascadeRCNN-CenterNet w.prob | 42.862  | 59.519 | 47.028 | 24.064 | 47.043 | 56.197 |
 
 
-Results by this implementation:
+Results by this implementation:(8 k80)
 
 |                              | AP     | AP50  | AP75   | APs    | APm    | APl    |
 | ---------------------------- | ------ | ----- | ------ | ------ | ------ | ------ |
 | cascadeRCNN-CenterNet w.prob | 41.9   | 59.0  | 46.4   | 24.4   | 45.6   | 55.4   |
 
+
+Results by this implementation:(single v100)
+
+|                              | AP     | AP50  | AP75   | APs    | APm    | APl    |
+| ---------------------------- | ------ | ----- | ------ | ------ | ------ | ------ |
+| cascadeRCNN-CenterNet w.prob | 42.8   | 60.5  | 47.7   | 25.4   | 45.9   | 56.0   |
 
 
 Log and model:
@@ -61,7 +67,11 @@ Log and model:
 | -------------------- | -------- | ------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
 | cascadeRCNN-CenterNet w.prob | R-50-FPN | 9000      | 41.9    | [config](https://github.com/huimlight/mmdetection/blob/centernetv2/configs/centernetv2/centernet2.py) | [log](https://github.com/huimlight/mmdet-centernetv2/blob/main/log) | [baidu ](https://pan.baidu.com/s/1XACylKLLZhBKo8nUJubA7g) [1171] | 8    |
 
+Log and model:
 
+|                      | backbone | Iter | bbox AP | Config                                                       | Log                                                          | Model                                                        | GPUs |
+| -------------------- | -------- | ------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
+| cascadeRCNN-CenterNet w.prob | R-50-FPN | 9000      | 42.8    | [config](https://github.com/huimlight/mmdetection/blob/centernetv2/configs/centernetv2/centernet2.py) | [log](https://github.com/huimlight/mmdet-centernetv2/blob/main/log) | [baidu ](https://pan.baidu.com/s/1XACylKLLZhBKo8nUJubA7g) [1171] | single v100    |
 
 ## Usage
 
