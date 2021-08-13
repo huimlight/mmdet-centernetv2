@@ -79,9 +79,9 @@ Revised Version:
 
 Results by this implementation:(single v100)
 
-|                              | AP     |
-| ---------------------------- | ------ |
-| cascadeRCNN-CenterNet w.prob | 42.7   |
+|                              | AP     | AP50  | AP75   | APs    | APm    | APl    |
+| ---------------------------- | ------ | ----- | ------ | ------ | ------ | ------ |
+| cascadeRCNN-CenterNet w.prob | 42.7   | 60.4  | 47.5   | 25.1   | 46.1   | 55.6   |
 
 We found that during training process, the improved version showed a faster convergence and outplayed the original version in performance for the most time. However, the original version laughed at last and won the competition at the very last validation stage with a close match score 0.428 vs 0.427. We assume that the seemingly ‘unreasonable’ assign of positive indices may add the robustness of the model.
 
