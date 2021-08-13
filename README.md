@@ -54,6 +54,13 @@ Results by this implementation:(8 k80)
 | cascadeRCNN-CenterNet w.prob | 41.9   | 59.0  | 46.4   | 24.4   | 45.6   | 55.4   |
 
 
+Log and model:
+
+|                      | backbone | Iter | bbox AP | Config                                                       | Log                                                          | Model                                                        | GPUs |
+| -------------------- | -------- | ------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
+| cascadeRCNN-CenterNet w.prob | R-50-FPN | 9000      | 41.9    | [config](https://github.com/huimlight/mmdetection/blob/centernetv2/configs/centernetv2/centernet2.py) | [log](https://github.com/huimlight/mmdet-centernetv2/blob/main/log) | [baidu ](https://pan.baidu.com/s/1XACylKLLZhBKo8nUJubA7g) [1171] | 8    |
+
+
 ## Extra:
 
 We fixed a clear bug from original CenterNet2 code, which produces repeated positive indices during heatmap loss calculation. And we also provided an optional distance map generation method (which differs from CenterNet2 in positive sample ranges). 
@@ -76,14 +83,7 @@ Results by this implementation:(single v100)
 | ---------------------------- | ------ |
 | cascadeRCNN-CenterNet w.prob | 42.7   |
 
-
 We found that during training process, the improved version showed a faster convergence and outplayed the original version in performance for the most time. However, the original version laughed at last and won the competition at the very last validation stage with a close match score 0.428 vs 0.427. We assume that the seemingly ‘unreasonable’ assign of positive indices may add the robustness of the model.
-
-Log and model:
-
-|                      | backbone | Iter | bbox AP | Config                                                       | Log                                                          | Model                                                        | GPUs |
-| -------------------- | -------- | ------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
-| cascadeRCNN-CenterNet w.prob | R-50-FPN | 9000      | 41.9    | [config](https://github.com/huimlight/mmdetection/blob/centernetv2/configs/centernetv2/centernet2.py) | [log](https://github.com/huimlight/mmdet-centernetv2/blob/main/log) | [baidu ](https://pan.baidu.com/s/1XACylKLLZhBKo8nUJubA7g) [1171] | 8    |
 
 Log and model:
 
