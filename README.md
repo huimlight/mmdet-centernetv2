@@ -10,13 +10,11 @@ Quick peek at the result:
 
 > **The paper:** centernet2(CascadeRCNN-CenterNet w. prob.) mAP is 42.9.
 >
-> **This implementation:** we implement centernet2(CascadeRCNN-CenterNet w. prob.) mAP is 41.9.
+> **This implementation:** we implement centernet2(CascadeRCNN-CenterNet w. prob.) mAP is 43.2.
 > 
-> **Reason:** There are problems with learning strategies.
+> **Note:** We will continue to maintain the code with trick.
 > 
-> **Note:** We will continue to maintain the code to get the map to 42.9.
-> 
-> **Note:** We then we're going to reproduce the weights, which Verification and inference part.
+> **Note:** We always reproduce the weights, which Verification and inference part.
 
 ## Implementation
 
@@ -58,7 +56,7 @@ Log and model:
 
 |                      | backbone | Iter | bbox AP | Config                                                       | Log                                                          | Model                                                        | GPUs |
 | -------------------- | -------- | ------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
-| cascadeRCNN-CenterNet w.prob | R-50-FPN | 9000      | 41.9    | [config](https://github.com/huimlight/mmdet-centernetv2/blob/main/centernet2_res50_rpn_90k_coco.py) | [log](https://github.com/huimlight/mmdet-centernetv2/blob/main/20210814_232645.log) | [baidu ](https://pan.baidu.com/s/1XACylKLLZhBKo8nUJubA7g) [1171] | 8    |
+| cascadeRCNN-CenterNet w.prob | R-50-FPN | 90000     | 43.2    | [config](https://github.com/huimlight/mmdet-centernetv2/blob/main/centernet2_res50_rpn_90k_coco.py) | [log](https://github.com/huimlight/mmdet-centernetv2/blob/main/20210814_232645.log) | [baidu ](https://pan.baidu.com/s/1XACylKLLZhBKo8nUJubA7g) [1171] | 8    |
 
 
 
