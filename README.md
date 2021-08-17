@@ -64,6 +64,20 @@ Log and model:
 
 You can train and inference the model like any other models in MMDetection, see [docs](https://mmdetection.readthedocs.io/) for details.
 
+conda create -n centernetv2 python=3.7 -y
+
+conda install pytorch cudatoolkit=10.1 torchvision -c pytorch
+
+pip install mmcv-full
+
+git clone https://github.com/yyz561/mmdetection
+
+pip install -r requirements/build.txt
+
+pip install -v -e .  # or "python setup.py develop"
+
+
+
 
 ## Acknowledgement
 
