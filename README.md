@@ -32,7 +32,7 @@ Quick peek at the result:
 
 ## Experiments
 
-**MMDetection:** this project is based on version v2.13.0.
+**MMDetection:** this project is based on version v2.15.0.
 
 **MMCV:** version v1.3.5
 
