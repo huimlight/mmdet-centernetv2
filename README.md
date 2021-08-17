@@ -47,11 +47,11 @@ Results reported in the paper:
 | cascadeRCNN-CenterNet w.prob | 42.862  | 59.519 | 47.028 | 24.064 | 47.043 | 56.197 |
 
 
-Results by this implementation:(8 k80)
+Results by this implementation:
 
 |                              | AP     | AP50  | AP75   | APs    | APm    | APl    |
 | ---------------------------- | ------ | ----- | ------ | ------ | ------ | ------ |
-| cascadeRCNN-CenterNet w.prob | 41.9   | 59.0  | 46.4   | 24.4   | 45.6   | 55.4   |
+| cascadeRCNN-CenterNet w.prob | 43.2   | 60.6  | 47.9   | 25.3   | 46.6   | 56.2   |
 
 
 Log and model:
@@ -60,42 +60,6 @@ Log and model:
 | -------------------- | -------- | ------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
 | cascadeRCNN-CenterNet w.prob | R-50-FPN | 9000      | 41.9    | [config](https://github.com/huimlight/mmdetection/blob/centernetv2/configs/centernetv2/centernet2.py) | [log](https://github.com/huimlight/mmdet-centernetv2/blob/main/log) | [baidu ](https://pan.baidu.com/s/1XACylKLLZhBKo8nUJubA7g) [1171] | 8    |
 
-
-## Extra:
-
-We fixed a clear bug from original CenterNet2 code, which produces repeated positive indices during heatmap loss calculation. And we also provided an optional distance map generation method (which differs from CenterNet2 in positive sample ranges). 
-
-Here we report both the original version and revised version results, please note that both versions fixed the ‘duplicated positive indices’ bug and both are training on a single V100 GPU for 90k iterations using a batch size of 20.
-
-Original Version:
-
-Results by this implementation:(single v100)
-
-|                              | AP     | AP50  | AP75   | APs    | APm    | APl    |
-| ---------------------------- | ------ | ----- | ------ | ------ | ------ | ------ |
-| cascadeRCNN-CenterNet w.prob | 42.8   | 60.5  | 47.7   | 25.4   | 45.9   | 56.0   |
-
-Revised Version:
-
-Results by this implementation:(single v100)
-
-|                              | AP     | AP50  | AP75   | APs    | APm    | APl    |
-| ---------------------------- | ------ | ----- | ------ | ------ | ------ | ------ |
-| cascadeRCNN-CenterNet w.prob | 42.7   | 60.4  | 47.5   | 25.1   | 46.1   | 55.6   |
-
-We found that during training process, the improved version showed a faster convergence and outplayed the original version in performance for the most time. However, the original version laughed at last and won the competition at the very last validation stage with a close match score 0.428 vs 0.427. We assume that the seemingly ‘unreasonable’ assign of positive indices may add the robustness of the model.
-
-Log and model:
-
-|                      | backbone | Iter | bbox AP | Config                                                       | Log                                                          | Model                                                        | GPUs |
-| -------------------- | -------- | ------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
-| cascadeRCNN-CenterNet w.prob | R-50-FPN | 9000      | 42.8    | [config](https://github.com/huimlight/mmdet-centernetv2/blob/main/centernet2_res50_rpn_90k_coco.py) | [log](https://github.com/huimlight/mmdet-centernetv2/blob/main/20210810_192908.log.json) | [baidu ](https://pan.baidu.com/s/1lVwFiMqCe3BsgeRSdR9u_g) [5bot] | single v100    |
-
-Log and model:
-
-|                      | backbone | Iter | bbox AP | Config                                                       | Log                                                          | Model                                                        | GPUs |
-| -------------------- | -------- | ------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
-| cascadeRCNN-CenterNet w.prob | R-50-FPN | 9000      | 42.7    | [config](https://github.com/huimlight/mmdet-centernetv2/blob/main/centernet2_res50_rpn_90k_coco_0.47.py) | [log](https://github.com/huimlight/mmdet-centernetv2/blob/main/20210810_192413.log.json) | [baidu ](https://pan.baidu.com/s/1kDOMnEpzFNjaxld8rHTCLw) [osix] | single v100    |
 
 
 ## Usage
