@@ -56,7 +56,7 @@ Log and model:
 
 |                      | backbone | Iter | bbox AP | Config                                                       | Log                                                          | Model                                                        | GPUs |
 | -------------------- | -------- | ------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
-| cascadeRCNN-CenterNet w.prob | R-50-FPN | 90000     | 43.2    | [config](https://github.com/huimlight/mmdet-centernetv2/blob/main/centernet2_res50_rpn_90k_coco.py) | [log](https://github.com/huimlight/mmdet-centernetv2/blob/main/20210814_232645.log) | [baidu ](https://pan.baidu.com/s/1XACylKLLZhBKo8nUJubA7g) [1171] | single-v100    |
+| cascadeRCNN-CenterNet w.prob | R-50-FPN | 90000     | 43.2    | [config](https://github.com/huimlight/mmdet-centernetv2/blob/main/centernet2_res50_rpn_90k_coco.py) | [log](https://github.com/huimlight/mmdet-centernetv2/blob/main/20210814_232645.log) | [baidu ](https://pan.baidu.com/s/1fh39a9xxeurFVy57klql6A) [jip5] | single-v100    |
 
 
 
